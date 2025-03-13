@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Asif Qumar - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: #fff;
+            transition: background 0.5s ease-in-out;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 50px;
+            text-align: center;
+            border-bottom: 5px solid #f39c12;
+            transition: all 0.3s ease-in-out;
+        }
+        header:hover {
+            background: rgba(0, 0, 0, 1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            font-family: 'Great Vibes', cursive;
+            font-weight: 400;
+        }
+        .content {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 15px;
+            transition: all 0.3s ease-in-out;
+            font-size: 1.2em;
+        }
+        .content:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+        .content h2 {
+            color: #f39c12;
+            font-size: 2em;
+        }
+        .skills a {
+            display: inline-block;
+            padding: 15px 20px;
+            background: #f39c12;
+            color: #333;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .skills a:hover {
+            transform: scale(1.1);
+            background: #e67e22;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+            font-size: 1.2em;
+        }
+        footer:hover {
+            background: rgba(0, 0, 0, 1);
+        }
+        .skills-section {
+            display: none;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 15px;
+        }
+    </style>
+    <script>
+        function toggleSkills() {
+            var skillsSection = document.getElementById("skillsSection");
+            if (skillsSection.style.display === "none" || skillsSection.style.display === "") {
+                skillsSection.style.display = "block";
+            } else {
+                skillsSection.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>MD Asif Qumar</h1>
+        <p>Data Engineer | Cloud Specialist | ETL Expert</p>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>I am a highly skilled Data Engineer with 3 years of experience, currently working at UnitedHealth Group (Optum). My expertise lies in cloud platforms, data engineering, and business intelligence, helping organizations drive data-driven decisions.</p>
+            <p><strong>Certifications:</strong> Microsoft AZ900, Data Visualization, Introduction to PySpark</p>
+            <p><strong>Awards:</strong> Diamond Performance Award at UnitedHealth Group</p>
+            <p><strong>Education:</strong> B.Tech in Information Technology from MAKAUT University (2018–2022)</p>
+        </div>
+        <div class="content skills">
+            <h2>Skills</h2>
+            <a onclick="toggleSkills()">View Skills</a>
+            <div id="skillsSection" class="skills-section">
+                <p>Python, Pandas, NumPy, SQL, MySQL, Teradata, Shell Scripting, DB2, Java, Snowflake</p>
+                <p>Power BI, Tableau</p>
+                <p>Grafana, Jenkins, Hive, Data Bricks, IBM Infosphere DataStage Designer, ETL Tools, PySpark</p>
+                <p>Microsoft Azure, GCP (Google Cloud Platform), Google Cloud Composer, Google Cloud Storage, BigQuery, Dataflow, Kubernetes, Cloud Logging</p>
+                <p>Airflow, Control-M Scheduler, Data Quality (DQ), Incident Response, Policy Compliance, Advanced Excel, OLAP, Data Analysis, Business Analysis, Customer Acquisition</p>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:qumarmdasif@gmail.com" style="color: #f39c12;">qumarmdasif@gmail.com</a></p>
+            <p>Phone: +91-7485053023</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/mdasifqumar/" target="_blank" style="color: #f39c12;">linkedin.com/in/mdasifqumar</a></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 MD Asif Qumar | Data Engineer Portfolio</p>
+    </footer>
+</body>
+</html>
